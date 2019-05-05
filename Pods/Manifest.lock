@@ -1,8 +1,5 @@
 PODS:
   - Alamofire (4.7.3)
-  - CocoaLumberjack/Default (3.4.2)
-  - CocoaLumberjack/Swift (3.4.2):
-    - CocoaLumberjack/Default
   - libwebp (0.6.1):
     - libwebp/core (= 0.6.1)
     - libwebp/dec (= 0.6.1)
@@ -37,7 +34,6 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - CocoaLumberjack/Swift
   - lottie-ios
   - SDWebImage/WebP
   - SnapKit
@@ -46,7 +42,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - CocoaLumberjack
     - libwebp
     - lottie-ios
     - SDWebImage
@@ -55,13 +50,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
-  libwebp: 0f01098c6c17175391af621b2f14150f3ca16e16
+  libwebp: 38b601da310fe7c329c638d0c0d10aed006a54fe
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   Toast-Swift: 594b5c5e5129f15438e410207e43287f027b3c00
 
-PODFILE CHECKSUM: 9398a8c9d111829b6532524fda51afaeec6f6983
+PODFILE CHECKSUM: 31dd516398517bc6226c28016a2ba9069ed79aa2
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

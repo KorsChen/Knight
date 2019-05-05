@@ -1,1 +1,6 @@
 .DS_Store
+Podfile.lock
+Gemfile.lock
+/Pods/
+/fastlane/
+Gemfile

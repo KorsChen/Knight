@@ -8,7 +8,6 @@ target 'Knight' do
   pod 'SDWebImage/WebP'
   pod 'SnapKit'
   pod 'lottie-ios'
-  pod 'CocoaLumberjack/Swift'
   pod 'Toast-Swift'
 
 end
