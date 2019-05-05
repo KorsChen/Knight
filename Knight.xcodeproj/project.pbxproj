@@ -1,0 +1,1574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26B67CFE02723854262508C0 /* Pods_Knight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D366B8D0F86FA365F399C766 /* Pods_Knight.framework */; };
+		2C019DA62115AE3600C09678 /* KMediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C019DA52115AE3600C09678 /* KMediaPlayer.swift */; };
+		2C057090210EFAC100C5A669 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A93B20F387AB006EABC8 /* MobileCoreServices.framework */; };
+		2C47F3452112EBCD003AD2CF /* KPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47F3442112EBCD003AD2CF /* KPlayer.swift */; };
+		2C5DF8A4210AFE8A00AAB0F3 /* KNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DF8A3210AFE8A00AAB0F3 /* KNavigationController.swift */; };
+		2C5DF8A9210AFF7D00AAB0F3 /* KBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DF8A5210AFF7D00AAB0F3 /* KBaseCell.swift */; };
+		2C5DF8AA210AFF7D00AAB0F3 /* KTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DF8A6210AFF7D00AAB0F3 /* KTableView.swift */; };
+		2C5DF8AB210AFF7D00AAB0F3 /* KWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DF8A7210AFF7D00AAB0F3 /* KWebVC.swift */; };
+		2C5DF8AC210AFF7D00AAB0F3 /* KBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DF8A8210AFF7D00AAB0F3 /* KBaseVC.swift */; };
+		2C5DF8B3210B0FF200AAB0F3 /* KCustomSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DF8B1210B0FF200AAB0F3 /* KCustomSegmentView.swift */; };
+		2C5DF8B4210B0FF200AAB0F3 /* KResourceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DF8B2210B0FF200AAB0F3 /* KResourceVC.swift */; };
+		2C5DF8B6210B109600AAB0F3 /* KResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DF8B5210B109600AAB0F3 /* KResourceCell.swift */; };
+		2C5DF8BC210B10AD00AAB0F3 /* KResourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DF8B9210B10AD00AAB0F3 /* KResourceModel.swift */; };
+		2C5DF8C1210B11C500AAB0F3 /* KResourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DF8C0210B11C500AAB0F3 /* KResourceItem.swift */; };
+		2C7E90C221081C4D00A08007 /* KInputURLVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E90C121081C4D00A08007 /* KInputURLVC.swift */; };
+		2C7E90C521081D4300A08007 /* UIView+util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E90C421081D4300A08007 /* UIView+util.swift */; };
+		2C7EFD49211694BB00A28F44 /* KPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7EFD48211694BB00A28F44 /* KPipeline.swift */; };
+		2C86A71420EF1030006EABC8 /* KMoviePlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A71220EF1030006EABC8 /* KMoviePlayVC.swift */; };
+		2C86A71520EF1030006EABC8 /* KMoviePlayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C86A71320EF1030006EABC8 /* KMoviePlayVC.xib */; };
+		2C86A71720EF1168006EABC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C86A71620EF1168006EABC8 /* Assets.xcassets */; };
+		2C86A71B20EF1564006EABC8 /* KHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A71A20EF1564006EABC8 /* KHistoryModel.swift */; };
+		2C86A71F20EF42CB006EABC8 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A71E20EF42CB006EABC8 /* Const.swift */; };
+		2C86A72120EF4309006EABC8 /* String+util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A72020EF4309006EABC8 /* String+util.swift */; };
+		2C86A72520EF7533006EABC8 /* KFFMoviePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A72420EF7533006EABC8 /* KFFMoviePlayerController.swift */; };
+		2C86A84720EF7BAF006EABC8 /* ijkurlhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A72C20EF7BAE006EABC8 /* ijkurlhook.c */; };
+		2C86A84820EF7BAF006EABC8 /* ijkasync.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A72E20EF7BAF006EABC8 /* ijkasync.c */; };
+		2C86A84920EF7BAF006EABC8 /* ijkiomanager.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A73020EF7BAF006EABC8 /* ijkiomanager.c */; };
+		2C86A84B20EF7BAF006EABC8 /* ijklongurl.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A73220EF7BAF006EABC8 /* ijklongurl.c */; };
+		2C86A84C20EF7BAF006EABC8 /* ijkmediadatasource.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A73320EF7BAF006EABC8 /* ijkmediadatasource.c */; };
+		2C86A84D20EF7BAF006EABC8 /* ijkio.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A73420EF7BAF006EABC8 /* ijkio.c */; };
+		2C86A84E20EF7BAF006EABC8 /* ijksegment.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A73520EF7BAF006EABC8 /* ijksegment.c */; };
+		2C86A84F20EF7BAF006EABC8 /* ijkioapplication.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A73620EF7BAF006EABC8 /* ijkioapplication.c */; };
+		2C86A85020EF7BAF006EABC8 /* ijkioprotocol.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A73720EF7BAF006EABC8 /* ijkioprotocol.c */; };
+		2C86A85120EF7BAF006EABC8 /* ijkiourlhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A73820EF7BAF006EABC8 /* ijkiourlhook.c */; };
+		2C86A85220EF7BAF006EABC8 /* ijkioffio.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A73920EF7BAF006EABC8 /* ijkioffio.c */; };
+		2C86A85320EF7BAF006EABC8 /* allformats.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A73A20EF7BAF006EABC8 /* allformats.c */; };
+		2C86A85420EF7BAF006EABC8 /* ijklivehook.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A73B20EF7BAF006EABC8 /* ijklivehook.c */; };
+		2C86A85520EF7BAF006EABC8 /* ijkiocache.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A73C20EF7BAF006EABC8 /* ijkiocache.c */; };
+		2C86A85620EF7BAF006EABC8 /* ffpipenode_ffplay_vdec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A74020EF7BAF006EABC8 /* ffpipenode_ffplay_vdec.c */; };
+		2C86A85720EF7BAF006EABC8 /* ffpipeline_ffplay.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A74320EF7BAF006EABC8 /* ffpipeline_ffplay.c */; };
+		2C86A85920EF7BAF006EABC8 /* ff_cmdutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A74720EF7BAF006EABC8 /* ff_cmdutils.c */; };
+		2C86A85A20EF7BAF006EABC8 /* ff_ffpipeline.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A74820EF7BAF006EABC8 /* ff_ffpipeline.c */; };
+		2C86A85B20EF7BAF006EABC8 /* ff_ffplay.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A74C20EF7BAF006EABC8 /* ff_ffplay.c */; };
+		2C86A85C20EF7BAF006EABC8 /* ff_ffpipenode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A74E20EF7BAF006EABC8 /* ff_ffpipenode.c */; };
+		2C86A86520EF7BAF006EABC8 /* ijkstl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A76B20EF7BAF006EABC8 /* ijkstl.cpp */; };
+		2C86A86620EF7BAF006EABC8 /* ijkfifo.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A76D20EF7BAF006EABC8 /* ijkfifo.c */; };
+		2C86A86720EF7BAF006EABC8 /* ijktree.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A76F20EF7BAF006EABC8 /* ijktree.c */; };
+		2C86A86820EF7BAF006EABC8 /* ijkdict.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A77320EF7BAF006EABC8 /* ijkdict.c */; };
+		2C86A86920EF7BAF006EABC8 /* ijkutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A77520EF7BAF006EABC8 /* ijkutils.c */; };
+		2C86A86A20EF7BAF006EABC8 /* ijkthreadpool.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A77720EF7BAF006EABC8 /* ijkthreadpool.c */; };
+		2C86A86B20EF7BAF006EABC8 /* ijkmeta.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A77820EF7BAF006EABC8 /* ijkmeta.c */; };
+		2C86A8A420EF7BAF006EABC8 /* image_convert.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7EC20EF7BAF006EABC8 /* image_convert.c */; };
+		2C86A8A520EF7BAF006EABC8 /* ijksdl_vout_overlay_ffmpeg.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7ED20EF7BAF006EABC8 /* ijksdl_vout_overlay_ffmpeg.c */; };
+		2C86A8A620EF7BAF006EABC8 /* ijksdl_thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7F120EF7BAF006EABC8 /* ijksdl_thread.c */; };
+		2C86A8A720EF7BAF006EABC8 /* ijksdl_audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7F220EF7BAF006EABC8 /* ijksdl_audio.c */; };
+		2C86A8A820EF7BAF006EABC8 /* renderer_yuv444p10le.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7F420EF7BAF006EABC8 /* renderer_yuv444p10le.c */; };
+		2C86A8A920EF7BAF006EABC8 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7F520EF7BAF006EABC8 /* common.c */; };
+		2C86A8AA20EF7BAF006EABC8 /* renderer_yuv420sp_vtb.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7F620EF7BAF006EABC8 /* renderer_yuv420sp_vtb.m */; };
+		2C86A8AB20EF7BAF006EABC8 /* mvp.vsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7F920EF7BAF006EABC8 /* mvp.vsh.c */; };
+		2C86A8AC20EF7BAF006EABC8 /* renderer_rgb.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7FA20EF7BAF006EABC8 /* renderer_rgb.c */; };
+		2C86A8AD20EF7BAF006EABC8 /* renderer_yuv420p.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7FB20EF7BAF006EABC8 /* renderer_yuv420p.c */; };
+		2C86A8AE20EF7BAF006EABC8 /* renderer_yuv420sp.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7FC20EF7BAF006EABC8 /* renderer_yuv420sp.c */; };
+		2C86A8AF20EF7BAF006EABC8 /* shader.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7FD20EF7BAF006EABC8 /* shader.c */; };
+		2C86A8B020EF7BAF006EABC8 /* renderer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7FE20EF7BAF006EABC8 /* renderer.c */; };
+		2C86A8B120EF7BAF006EABC8 /* yuv444p10le.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A80020EF7BAF006EABC8 /* yuv444p10le.fsh.c */; };
+		2C86A8B220EF7BAF006EABC8 /* yuv420p.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A80120EF7BAF006EABC8 /* yuv420p.fsh.c */; };
+		2C86A8B320EF7BAF006EABC8 /* yuv420sp.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A80220EF7BAF006EABC8 /* yuv420sp.fsh.c */; };
+		2C86A8B420EF7BAF006EABC8 /* rgb.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A80320EF7BAF006EABC8 /* rgb.fsh.c */; };
+		2C86A8B520EF7BAF006EABC8 /* color.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A80420EF7BAF006EABC8 /* color.c */; };
+		2C86A8B620EF7BAF006EABC8 /* ijksdl_vout_dummy.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A80820EF7BAF006EABC8 /* ijksdl_vout_dummy.c */; };
+		2C86A8B820EF7BAF006EABC8 /* ijksdl_aout.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A80E20EF7BAF006EABC8 /* ijksdl_aout.c */; };
+		2C86A8B920EF7BAF006EABC8 /* ijksdl_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A81520EF7BAF006EABC8 /* ijksdl_error.c */; };
+		2C86A8BA20EF7BAF006EABC8 /* ijksdl_vout.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A81820EF7BAF006EABC8 /* ijksdl_vout.c */; };
+		2C86A8BB20EF7BAF006EABC8 /* ijksdl_stdinc.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A81920EF7BAF006EABC8 /* ijksdl_stdinc.c */; };
+		2C86A8CB20EF7BAF006EABC8 /* ijksdl_egl.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A83D20EF7BAF006EABC8 /* ijksdl_egl.c */; };
+		2C86A8CC20EF7BAF006EABC8 /* ijksdl_mutex.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A83F20EF7BAF006EABC8 /* ijksdl_mutex.c */; };
+		2C86A8CD20EF7BAF006EABC8 /* ijksdl_timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A84420EF7BAF006EABC8 /* ijksdl_timer.c */; };
+		2C86A8CE20EF7BAF006EABC8 /* ijksdl_extra_log.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A84520EF7BAF006EABC8 /* ijksdl_extra_log.c */; };
+		2C86A8D020F30788006EABC8 /* KFFOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A8CF20F30788006EABC8 /* KFFOptions.swift */; };
+		2C86A90120F36AB5006EABC8 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A90020F36AB5006EABC8 /* VideoToolbox.framework */; };
+		2C86A90320F36ABB006EABC8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A90220F36ABB006EABC8 /* AudioToolbox.framework */; };
+		2C86A91C20F36B87006EABC8 /* IJKSDLAudioQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A90720F36B87006EABC8 /* IJKSDLAudioQueueController.m */; };
+		2C86A91D20F36B87006EABC8 /* IJKSDLAudioUnitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A90920F36B87006EABC8 /* IJKSDLAudioUnitController.m */; };
+		2C86A91E20F36B87006EABC8 /* ijksdl_vout_overlay_videotoolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A90A20F36B87006EABC8 /* ijksdl_vout_overlay_videotoolbox.m */; };
+		2C86A91F20F36B87006EABC8 /* IJKSDLAudioKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A90C20F36B87006EABC8 /* IJKSDLAudioKit.m */; };
+		2C86A92020F36B87006EABC8 /* IJKSDLGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A90D20F36B87006EABC8 /* IJKSDLGLView.m */; };
+		2C86A92120F36B87006EABC8 /* ijksdl_thread_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A90E20F36B87006EABC8 /* ijksdl_thread_ios.m */; };
+		2C86A92220F36B87006EABC8 /* ijksdl_aout_ios_audiounit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A90F20F36B87006EABC8 /* ijksdl_aout_ios_audiounit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C86A92320F36B87006EABC8 /* ijksdl_vout_ios_gles2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A91620F36B87006EABC8 /* ijksdl_vout_ios_gles2.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C86A92620F3872D006EABC8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A92520F3872D006EABC8 /* libc++.tbd */; };
+		2C86A92820F3873B006EABC8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A92720F3873B006EABC8 /* libz.tbd */; };
+		2C86A92A20F38749006EABC8 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A92920F38749006EABC8 /* libbz2.tbd */; };
+		2C86A92C20F3875F006EABC8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A92B20F3875F006EABC8 /* CoreVideo.framework */; };
+		2C86A92E20F3876E006EABC8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A92D20F3876E006EABC8 /* CoreMedia.framework */; };
+		2C86A93020F38777006EABC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A92F20F38776006EABC8 /* CoreGraphics.framework */; };
+		2C86A93220F3877E006EABC8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A93120F3877E006EABC8 /* AVFoundation.framework */; };
+		2C86A93420F38785006EABC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A93320F38785006EABC8 /* UIKit.framework */; };
+		2C86A93620F3878C006EABC8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A93520F3878C006EABC8 /* OpenGLES.framework */; };
+		2C86A93820F38798006EABC8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A93720F38798006EABC8 /* MediaPlayer.framework */; };
+		2C86A93A20F387A3006EABC8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A93920F387A3006EABC8 /* QuartzCore.framework */; };
+		2C9E61C9211192EA00BD18D4 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E61C3211192EA00BD18D4 /* heart.json */; };
+		2C9E61CA211192EA00BD18D4 /* rabbit.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E61C4211192EA00BD18D4 /* rabbit.json */; };
+		2C9E61CB211192EA00BD18D4 /* airplane_flying.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E61C5211192EA00BD18D4 /* airplane_flying.json */; };
+		2C9E61CC211192EA00BD18D4 /* funky_chicken.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E61C6211192EA00BD18D4 /* funky_chicken.json */; };
+		2C9E61CD211192EA00BD18D4 /* hiragana_a.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E61C7211192EA00BD18D4 /* hiragana_a.json */; };
+		2C9E61D12111A53500BD18D4 /* jumping_banano.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E61CF2111A53500BD18D4 /* jumping_banano.json */; };
+		2C9E61D62111A7E500BD18D4 /* happy_tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E61D52111A7E500BD18D4 /* happy_tree.json */; };
+		2CA0AED420F49C15003E2E6A /* IJKVideoToolBoxAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0AEC820F49C15003E2E6A /* IJKVideoToolBoxAsync.m */; };
+		2CA0AED620F49C15003E2E6A /* IJKVideoToolBoxSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0AECD20F49C15003E2E6A /* IJKVideoToolBoxSync.m */; };
+		2CB591CC20EDF2F700EB3E97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB591CB20EDF2F700EB3E97 /* AppDelegate.swift */; };
+		2CB591E120EDF2F800EB3E97 /* KnightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB591E020EDF2F800EB3E97 /* KnightTests.swift */; };
+		2CB591EC20EDF2F800EB3E97 /* KnightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB591EB20EDF2F800EB3E97 /* KnightUITests.swift */; };
+		2CB5932220EDF59100EB3E97 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB5931C20EDF59100EB3E97 /* libavutil.a */; };
+		2CB5932320EDF59100EB3E97 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB5931D20EDF59100EB3E97 /* libavfilter.a */; };
+		2CB5932420EDF59100EB3E97 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB5931E20EDF59100EB3E97 /* libavcodec.a */; };
+		2CB5932520EDF59100EB3E97 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB5931F20EDF59100EB3E97 /* libavformat.a */; };
+		2CB5932620EDF59100EB3E97 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB5932020EDF59100EB3E97 /* libswresample.a */; };
+		2CB5932720EDF59100EB3E97 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB5932120EDF59100EB3E97 /* libswscale.a */; };
+		2CB5932A20EDFA6E00EB3E97 /* KRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB5932920EDFA6E00EB3E97 /* KRootVC.swift */; };
+		2CB5932C20EE1F0A00EB3E97 /* KLocalFolderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB5932B20EE1F0A00EB3E97 /* KLocalFolderVC.swift */; };
+		2CBCF0D22101F1340031C36E /* KFFMoviePlayerDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBCF0D12101F1340031C36E /* KFFMoviePlayerDef.swift */; };
+		2CE09ADD211B1EB40051EEED /* KVideoToolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE09ADC211B1EB40051EEED /* KVideoToolbox.swift */; };
+		2CEACA2B20F5DB9700138144 /* KAudioKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEACA2A20F5DB9700138144 /* KAudioKit.swift */; };
+		2CEACA2E20F6078B00138144 /* KMediaModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEACA2D20F6078B00138144 /* KMediaModule.swift */; };
+		2CEACA3020F6F21700138144 /* KNotificaitonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEACA2F20F6F21700138144 /* KNotificaitonManager.swift */; };
+		2CEACA3220F6F90F00138144 /* KMediaPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEACA3120F6F90F00138144 /* KMediaPlayback.swift */; };
+		2CEACA3520F757B100138144 /* KMediaControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEACA3420F757B100138144 /* KMediaControl.swift */; };
+		2CED4EEA211B25DA00920C4C /* KVideoToolBoxAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED4EE9211B25DA00920C4C /* KVideoToolBoxAsync.swift */; };
+		2CF3E741210E2C5C00BE8232 /* UIButton+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF3E740210E2C5C00BE8232 /* UIButton+ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CB591DD20EDF2F800EB3E97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CB591C020EDF2F700EB3E97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CB591C720EDF2F700EB3E97;
+			remoteInfo = Knight;
+		};
+		2CB591E820EDF2F800EB3E97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CB591C020EDF2F700EB3E97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CB591C720EDF2F700EB3E97;
+			remoteInfo = Knight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C019DA52115AE3600C09678 /* KMediaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMediaPlayer.swift; sourceTree = "<group>"; };
+		2C47F3442112EBCD003AD2CF /* KPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPlayer.swift; sourceTree = "<group>"; };
+		2C5DF8A3210AFE8A00AAB0F3 /* KNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KNavigationController.swift; sourceTree = "<group>"; };
+		2C5DF8A5210AFF7D00AAB0F3 /* KBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBaseCell.swift; sourceTree = "<group>"; };
+		2C5DF8A6210AFF7D00AAB0F3 /* KTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTableView.swift; sourceTree = "<group>"; };
+		2C5DF8A7210AFF7D00AAB0F3 /* KWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KWebVC.swift; sourceTree = "<group>"; };
+		2C5DF8A8210AFF7D00AAB0F3 /* KBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBaseVC.swift; sourceTree = "<group>"; };
+		2C5DF8B1210B0FF200AAB0F3 /* KCustomSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCustomSegmentView.swift; sourceTree = "<group>"; };
+		2C5DF8B2210B0FF200AAB0F3 /* KResourceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KResourceVC.swift; sourceTree = "<group>"; };
+		2C5DF8B5210B109600AAB0F3 /* KResourceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KResourceCell.swift; sourceTree = "<group>"; };
+		2C5DF8B9210B10AD00AAB0F3 /* KResourceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KResourceModel.swift; sourceTree = "<group>"; };
+		2C5DF8C0210B11C500AAB0F3 /* KResourceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KResourceItem.swift; sourceTree = "<group>"; };
+		2C7E90C121081C4D00A08007 /* KInputURLVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KInputURLVC.swift; sourceTree = "<group>"; };
+		2C7E90C421081D4300A08007 /* UIView+util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+util.swift"; sourceTree = "<group>"; };
+		2C7EFD48211694BB00A28F44 /* KPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPipeline.swift; sourceTree = "<group>"; };
+		2C86A71220EF1030006EABC8 /* KMoviePlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMoviePlayVC.swift; sourceTree = "<group>"; };
+		2C86A71320EF1030006EABC8 /* KMoviePlayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KMoviePlayVC.xib; sourceTree = "<group>"; };
+		2C86A71620EF1168006EABC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C86A71A20EF1564006EABC8 /* KHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHistoryModel.swift; sourceTree = "<group>"; };
+		2C86A71E20EF42CB006EABC8 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		2C86A72020EF4309006EABC8 /* String+util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+util.swift"; sourceTree = "<group>"; };
+		2C86A72420EF7533006EABC8 /* KFFMoviePlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFFMoviePlayerController.swift; sourceTree = "<group>"; };
+		2C86A72920EF7BAE006EABC8 /* ff_fferror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ff_fferror.h; sourceTree = "<group>"; };
+		2C86A72B20EF7BAE006EABC8 /* ijkavformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijkavformat.h; sourceTree = "<group>"; };
+		2C86A72C20EF7BAE006EABC8 /* ijkurlhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkurlhook.c; sourceTree = "<group>"; };
+		2C86A72D20EF7BAF006EABC8 /* ijkioprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijkioprotocol.h; sourceTree = "<group>"; };
+		2C86A72E20EF7BAF006EABC8 /* ijkasync.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkasync.c; sourceTree = "<group>"; };
+		2C86A72F20EF7BAF006EABC8 /* ijkioapplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijkioapplication.h; sourceTree = "<group>"; };
+		2C86A73020EF7BAF006EABC8 /* ijkiomanager.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkiomanager.c; sourceTree = "<group>"; };
+		2C86A73220EF7BAF006EABC8 /* ijklongurl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijklongurl.c; sourceTree = "<group>"; };
+		2C86A73320EF7BAF006EABC8 /* ijkmediadatasource.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkmediadatasource.c; sourceTree = "<group>"; };
+		2C86A73420EF7BAF006EABC8 /* ijkio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkio.c; sourceTree = "<group>"; };
+		2C86A73520EF7BAF006EABC8 /* ijksegment.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksegment.c; sourceTree = "<group>"; };
+		2C86A73620EF7BAF006EABC8 /* ijkioapplication.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkioapplication.c; sourceTree = "<group>"; };
+		2C86A73720EF7BAF006EABC8 /* ijkioprotocol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkioprotocol.c; sourceTree = "<group>"; };
+		2C86A73820EF7BAF006EABC8 /* ijkiourlhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkiourlhook.c; sourceTree = "<group>"; };
+		2C86A73920EF7BAF006EABC8 /* ijkioffio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkioffio.c; sourceTree = "<group>"; };
+		2C86A73A20EF7BAF006EABC8 /* allformats.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = allformats.c; sourceTree = "<group>"; };
+		2C86A73B20EF7BAF006EABC8 /* ijklivehook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijklivehook.c; sourceTree = "<group>"; };
+		2C86A73C20EF7BAF006EABC8 /* ijkiocache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkiocache.c; sourceTree = "<group>"; };
+		2C86A73D20EF7BAF006EABC8 /* ijkiourl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijkiourl.h; sourceTree = "<group>"; };
+		2C86A73E20EF7BAF006EABC8 /* ijkiomanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijkiomanager.h; sourceTree = "<group>"; };
+		2C86A74020EF7BAF006EABC8 /* ffpipenode_ffplay_vdec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffpipenode_ffplay_vdec.c; sourceTree = "<group>"; };
+		2C86A74120EF7BAF006EABC8 /* ffpipeline_ffplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffpipeline_ffplay.h; sourceTree = "<group>"; };
+		2C86A74220EF7BAF006EABC8 /* ffpipenode_ffplay_vdec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffpipenode_ffplay_vdec.h; sourceTree = "<group>"; };
+		2C86A74320EF7BAF006EABC8 /* ffpipeline_ffplay.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffpipeline_ffplay.c; sourceTree = "<group>"; };
+		2C86A74420EF7BAF006EABC8 /* ff_ffpipenode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ff_ffpipenode.h; sourceTree = "<group>"; };
+		2C86A74720EF7BAF006EABC8 /* ff_cmdutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ff_cmdutils.c; sourceTree = "<group>"; };
+		2C86A74820EF7BAF006EABC8 /* ff_ffpipeline.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ff_ffpipeline.c; sourceTree = "<group>"; };
+		2C86A74A20EF7BAF006EABC8 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		2C86A74C20EF7BAF006EABC8 /* ff_ffplay.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ff_ffplay.c; sourceTree = "<group>"; };
+		2C86A74D20EF7BAF006EABC8 /* ijkmeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijkmeta.h; sourceTree = "<group>"; };
+		2C86A74E20EF7BAF006EABC8 /* ff_ffpipenode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ff_ffpipenode.c; sourceTree = "<group>"; };
+		2C86A74F20EF7BAF006EABC8 /* ff_ffplay_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ff_ffplay_debug.h; sourceTree = "<group>"; };
+		2C86A75120EF7BAF006EABC8 /* ff_ffplay_options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ff_ffplay_options.h; sourceTree = "<group>"; };
+		2C86A75220EF7BAF006EABC8 /* ff_ffmsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ff_ffmsg.h; sourceTree = "<group>"; };
+		2C86A76220EF7BAF006EABC8 /* ff_ffinc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ff_ffinc.h; sourceTree = "<group>"; };
+		2C86A76320EF7BAF006EABC8 /* ff_ffpipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ff_ffpipeline.h; sourceTree = "<group>"; };
+		2C86A76420EF7BAF006EABC8 /* ff_ffplay_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ff_ffplay_def.h; sourceTree = "<group>"; };
+		2C86A76520EF7BAF006EABC8 /* ff_cmdutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ff_cmdutils.h; sourceTree = "<group>"; };
+		2C86A76720EF7BAF006EABC8 /* ff_ffplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ff_ffplay.h; sourceTree = "<group>"; };
+		2C86A76920EF7BAF006EABC8 /* ff_ffmsg_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ff_ffmsg_queue.h; sourceTree = "<group>"; };
+		2C86A76B20EF7BAF006EABC8 /* ijkstl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ijkstl.cpp; sourceTree = "<group>"; };
+		2C86A76C20EF7BAF006EABC8 /* ijkutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijkutils.h; sourceTree = "<group>"; };
+		2C86A76D20EF7BAF006EABC8 /* ijkfifo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkfifo.c; sourceTree = "<group>"; };
+		2C86A76E20EF7BAF006EABC8 /* ijkdict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijkdict.h; sourceTree = "<group>"; };
+		2C86A76F20EF7BAF006EABC8 /* ijktree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijktree.c; sourceTree = "<group>"; };
+		2C86A77020EF7BAF006EABC8 /* ijkstl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijkstl.h; sourceTree = "<group>"; };
+		2C86A77120EF7BAF006EABC8 /* ijkthreadpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijkthreadpool.h; sourceTree = "<group>"; };
+		2C86A77220EF7BAF006EABC8 /* opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opt.h; sourceTree = "<group>"; };
+		2C86A77320EF7BAF006EABC8 /* ijkdict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkdict.c; sourceTree = "<group>"; };
+		2C86A77420EF7BAF006EABC8 /* ijkfifo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijkfifo.h; sourceTree = "<group>"; };
+		2C86A77520EF7BAF006EABC8 /* ijkutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkutils.c; sourceTree = "<group>"; };
+		2C86A77620EF7BAF006EABC8 /* ijktree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijktree.h; sourceTree = "<group>"; };
+		2C86A77720EF7BAF006EABC8 /* ijkthreadpool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkthreadpool.c; sourceTree = "<group>"; };
+		2C86A77820EF7BAF006EABC8 /* ijkmeta.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkmeta.c; sourceTree = "<group>"; };
+		2C86A7E620EF7BAF006EABC8 /* ijksdl_gles2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_gles2.h; sourceTree = "<group>"; };
+		2C86A7E720EF7BAF006EABC8 /* ijksdl_stdinc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_stdinc.h; sourceTree = "<group>"; };
+		2C86A7E820EF7BAF006EABC8 /* ijksdl_container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_container.h; sourceTree = "<group>"; };
+		2C86A7E920EF7BAF006EABC8 /* ijksdl_vout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout.h; sourceTree = "<group>"; };
+		2C86A7EC20EF7BAF006EABC8 /* image_convert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_convert.c; sourceTree = "<group>"; };
+		2C86A7ED20EF7BAF006EABC8 /* ijksdl_vout_overlay_ffmpeg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_vout_overlay_ffmpeg.c; sourceTree = "<group>"; };
+		2C86A7EE20EF7BAF006EABC8 /* ijksdl_image_convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_image_convert.h; sourceTree = "<group>"; };
+		2C86A7EF20EF7BAF006EABC8 /* ijksdl_inc_ffmpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_inc_ffmpeg.h; sourceTree = "<group>"; };
+		2C86A7F020EF7BAF006EABC8 /* ijksdl_vout_overlay_ffmpeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout_overlay_ffmpeg.h; sourceTree = "<group>"; };
+		2C86A7F120EF7BAF006EABC8 /* ijksdl_thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_thread.c; sourceTree = "<group>"; };
+		2C86A7F220EF7BAF006EABC8 /* ijksdl_audio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_audio.c; sourceTree = "<group>"; };
+		2C86A7F420EF7BAF006EABC8 /* renderer_yuv444p10le.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_yuv444p10le.c; sourceTree = "<group>"; };
+		2C86A7F520EF7BAF006EABC8 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		2C86A7F620EF7BAF006EABC8 /* renderer_yuv420sp_vtb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = renderer_yuv420sp_vtb.m; sourceTree = "<group>"; };
+		2C86A7F720EF7BAF006EABC8 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		2C86A7F920EF7BAF006EABC8 /* mvp.vsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mvp.vsh.c; sourceTree = "<group>"; };
+		2C86A7FA20EF7BAF006EABC8 /* renderer_rgb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_rgb.c; sourceTree = "<group>"; };
+		2C86A7FB20EF7BAF006EABC8 /* renderer_yuv420p.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_yuv420p.c; sourceTree = "<group>"; };
+		2C86A7FC20EF7BAF006EABC8 /* renderer_yuv420sp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_yuv420sp.c; sourceTree = "<group>"; };
+		2C86A7FD20EF7BAF006EABC8 /* shader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shader.c; sourceTree = "<group>"; };
+		2C86A7FE20EF7BAF006EABC8 /* renderer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer.c; sourceTree = "<group>"; };
+		2C86A80020EF7BAF006EABC8 /* yuv444p10le.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv444p10le.fsh.c; sourceTree = "<group>"; };
+		2C86A80120EF7BAF006EABC8 /* yuv420p.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv420p.fsh.c; sourceTree = "<group>"; };
+		2C86A80220EF7BAF006EABC8 /* yuv420sp.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv420sp.fsh.c; sourceTree = "<group>"; };
+		2C86A80320EF7BAF006EABC8 /* rgb.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rgb.fsh.c; sourceTree = "<group>"; };
+		2C86A80420EF7BAF006EABC8 /* color.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = color.c; sourceTree = "<group>"; };
+		2C86A80620EF7BAF006EABC8 /* ijksdl_dummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_dummy.h; sourceTree = "<group>"; };
+		2C86A80720EF7BAF006EABC8 /* ijksdl_vout_dummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout_dummy.h; sourceTree = "<group>"; };
+		2C86A80820EF7BAF006EABC8 /* ijksdl_vout_dummy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_vout_dummy.c; sourceTree = "<group>"; };
+		2C86A80A20EF7BAF006EABC8 /* ijksdl_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_mutex.h; sourceTree = "<group>"; };
+		2C86A80B20EF7BAF006EABC8 /* ijksdl_egl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_egl.h; sourceTree = "<group>"; };
+		2C86A80C20EF7BAF006EABC8 /* ijksdl_fourcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_fourcc.h; sourceTree = "<group>"; };
+		2C86A80D20EF7BAF006EABC8 /* ijksdl_video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_video.h; sourceTree = "<group>"; };
+		2C86A80E20EF7BAF006EABC8 /* ijksdl_aout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_aout.c; sourceTree = "<group>"; };
+		2C86A80F20EF7BAF006EABC8 /* ijksdl_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_endian.h; sourceTree = "<group>"; };
+		2C86A81020EF7BAF006EABC8 /* ijksdl_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_class.h; sourceTree = "<group>"; };
+		2C86A81120EF7BAF006EABC8 /* ijksdl_extra_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_extra_log.h; sourceTree = "<group>"; };
+		2C86A81220EF7BAF006EABC8 /* ijksdl_timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_timer.h; sourceTree = "<group>"; };
+		2C86A81320EF7BAF006EABC8 /* ijksdl_aout_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_aout_internal.h; sourceTree = "<group>"; };
+		2C86A81420EF7BAF006EABC8 /* ijksdl_inc_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_inc_internal.h; sourceTree = "<group>"; };
+		2C86A81520EF7BAF006EABC8 /* ijksdl_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_error.c; sourceTree = "<group>"; };
+		2C86A81620EF7BAF006EABC8 /* ijksdl_audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_audio.h; sourceTree = "<group>"; };
+		2C86A81720EF7BAF006EABC8 /* ijksdl_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_thread.h; sourceTree = "<group>"; };
+		2C86A81820EF7BAF006EABC8 /* ijksdl_vout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_vout.c; sourceTree = "<group>"; };
+		2C86A81920EF7BAF006EABC8 /* ijksdl_stdinc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_stdinc.c; sourceTree = "<group>"; };
+		2C86A83C20EF7BAF006EABC8 /* ijksdl_vout_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout_internal.h; sourceTree = "<group>"; };
+		2C86A83D20EF7BAF006EABC8 /* ijksdl_egl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_egl.c; sourceTree = "<group>"; };
+		2C86A83E20EF7BAF006EABC8 /* ijksdl_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_log.h; sourceTree = "<group>"; };
+		2C86A83F20EF7BAF006EABC8 /* ijksdl_mutex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_mutex.c; sourceTree = "<group>"; };
+		2C86A84020EF7BAF006EABC8 /* ijksdl_aout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_aout.h; sourceTree = "<group>"; };
+		2C86A84120EF7BAF006EABC8 /* ijksdl_misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_misc.h; sourceTree = "<group>"; };
+		2C86A84220EF7BAF006EABC8 /* ijksdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl.h; sourceTree = "<group>"; };
+		2C86A84320EF7BAF006EABC8 /* ijksdl_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_error.h; sourceTree = "<group>"; };
+		2C86A84420EF7BAF006EABC8 /* ijksdl_timer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_timer.c; sourceTree = "<group>"; };
+		2C86A84520EF7BAF006EABC8 /* ijksdl_extra_log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_extra_log.c; sourceTree = "<group>"; };
+		2C86A8CF20F30788006EABC8 /* KFFOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFFOptions.swift; sourceTree = "<group>"; };
+		2C86A8FE20F364DD006EABC8 /* Knight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Knight-Bridging-Header.h"; sourceTree = "<group>"; };
+		2C86A90020F36AB5006EABC8 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		2C86A90220F36ABB006EABC8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2C86A90720F36B87006EABC8 /* IJKSDLAudioQueueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKSDLAudioQueueController.m; sourceTree = "<group>"; };
+		2C86A90920F36B87006EABC8 /* IJKSDLAudioUnitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKSDLAudioUnitController.m; sourceTree = "<group>"; };
+		2C86A90A20F36B87006EABC8 /* ijksdl_vout_overlay_videotoolbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ijksdl_vout_overlay_videotoolbox.m; sourceTree = "<group>"; };
+		2C86A90B20F36B87006EABC8 /* ijksdl_vout_ios_gles2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout_ios_gles2.h; sourceTree = "<group>"; };
+		2C86A90C20F36B87006EABC8 /* IJKSDLAudioKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKSDLAudioKit.m; sourceTree = "<group>"; };
+		2C86A90D20F36B87006EABC8 /* IJKSDLGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKSDLGLView.m; sourceTree = "<group>"; };
+		2C86A90E20F36B87006EABC8 /* ijksdl_thread_ios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ijksdl_thread_ios.m; sourceTree = "<group>"; };
+		2C86A90F20F36B87006EABC8 /* ijksdl_aout_ios_audiounit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ijksdl_aout_ios_audiounit.m; sourceTree = "<group>"; };
+		2C86A91020F36B87006EABC8 /* ijksdl_vout_overlay_videotoolbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout_overlay_videotoolbox.h; sourceTree = "<group>"; };
+		2C86A91120F36B87006EABC8 /* IJKSDLAudioUnitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKSDLAudioUnitController.h; sourceTree = "<group>"; };
+		2C86A91220F36B87006EABC8 /* IJKSDLAudioQueueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKSDLAudioQueueController.h; sourceTree = "<group>"; };
+		2C86A91520F36B87006EABC8 /* IJKSDLAudioKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKSDLAudioKit.h; sourceTree = "<group>"; };
+		2C86A91620F36B87006EABC8 /* ijksdl_vout_ios_gles2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ijksdl_vout_ios_gles2.m; sourceTree = "<group>"; };
+		2C86A91720F36B87006EABC8 /* ijksdl_aout_ios_audiounit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_aout_ios_audiounit.h; sourceTree = "<group>"; };
+		2C86A91820F36B87006EABC8 /* ijksdl_thread_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_thread_ios.h; sourceTree = "<group>"; };
+		2C86A91920F36B87006EABC8 /* IJKSDLGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKSDLGLView.h; sourceTree = "<group>"; };
+		2C86A92420F36CD3006EABC8 /* IJKSDLGLViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IJKSDLGLViewProtocol.h; sourceTree = "<group>"; };
+		2C86A92520F3872D006EABC8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		2C86A92720F3873B006EABC8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2C86A92920F38749006EABC8 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		2C86A92B20F3875F006EABC8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		2C86A92D20F3876E006EABC8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2C86A92F20F38776006EABC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C86A93120F3877E006EABC8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2C86A93320F38785006EABC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C86A93520F3878C006EABC8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2C86A93720F38798006EABC8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2C86A93920F387A3006EABC8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2C86A93B20F387AB006EABC8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2C9E61C3211192EA00BD18D4 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
+		2C9E61C4211192EA00BD18D4 /* rabbit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rabbit.json; sourceTree = "<group>"; };
+		2C9E61C5211192EA00BD18D4 /* airplane_flying.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airplane_flying.json; sourceTree = "<group>"; };
+		2C9E61C6211192EA00BD18D4 /* funky_chicken.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = funky_chicken.json; sourceTree = "<group>"; };
+		2C9E61C7211192EA00BD18D4 /* hiragana_a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hiragana_a.json; sourceTree = "<group>"; };
+		2C9E61CF2111A53500BD18D4 /* jumping_banano.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jumping_banano.json; sourceTree = "<group>"; };
+		2C9E61D52111A7E500BD18D4 /* happy_tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = happy_tree.json; sourceTree = "<group>"; };
+		2CA0AEC720F49C15003E2E6A /* IJKVideoToolBoxSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKVideoToolBoxSync.h; sourceTree = "<group>"; };
+		2CA0AEC820F49C15003E2E6A /* IJKVideoToolBoxAsync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKVideoToolBoxAsync.m; sourceTree = "<group>"; };
+		2CA0AECC20F49C15003E2E6A /* h264_sps_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = h264_sps_parser.h; sourceTree = "<group>"; };
+		2CA0AECD20F49C15003E2E6A /* IJKVideoToolBoxSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKVideoToolBoxSync.m; sourceTree = "<group>"; };
+		2CA0AECE20F49C15003E2E6A /* IJKVideoToolBoxAsync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKVideoToolBoxAsync.h; sourceTree = "<group>"; };
+		2CACEC1E21073CB000AD0583 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		2CB591C820EDF2F700EB3E97 /* Knight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB591CB20EDF2F700EB3E97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CB591D720EDF2F800EB3E97 /* Knight.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Knight.plist; sourceTree = "<group>"; };
+		2CB591DC20EDF2F800EB3E97 /* KnightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB591E020EDF2F800EB3E97 /* KnightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnightTests.swift; sourceTree = "<group>"; };
+		2CB591E220EDF2F800EB3E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CB591E720EDF2F800EB3E97 /* KnightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB591EB20EDF2F800EB3E97 /* KnightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnightUITests.swift; sourceTree = "<group>"; };
+		2CB591ED20EDF2F800EB3E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CB5931C20EDF59100EB3E97 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
+		2CB5931D20EDF59100EB3E97 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavfilter.a; sourceTree = "<group>"; };
+		2CB5931E20EDF59100EB3E97 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
+		2CB5931F20EDF59100EB3E97 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
+		2CB5932020EDF59100EB3E97 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
+		2CB5932120EDF59100EB3E97 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		2CB5932920EDFA6E00EB3E97 /* KRootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRootVC.swift; sourceTree = "<group>"; };
+		2CB5932B20EE1F0A00EB3E97 /* KLocalFolderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLocalFolderVC.swift; sourceTree = "<group>"; };
+		2CBCF0D12101F1340031C36E /* KFFMoviePlayerDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFFMoviePlayerDef.swift; sourceTree = "<group>"; };
+		2CE09ADC211B1EB40051EEED /* KVideoToolbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVideoToolbox.swift; sourceTree = "<group>"; };
+		2CEACA2A20F5DB9700138144 /* KAudioKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAudioKit.swift; sourceTree = "<group>"; };
+		2CEACA2D20F6078B00138144 /* KMediaModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMediaModule.swift; sourceTree = "<group>"; };
+		2CEACA2F20F6F21700138144 /* KNotificaitonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNotificaitonManager.swift; sourceTree = "<group>"; };
+		2CEACA3120F6F90F00138144 /* KMediaPlayback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMediaPlayback.swift; sourceTree = "<group>"; };
+		2CEACA3420F757B100138144 /* KMediaControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMediaControl.swift; sourceTree = "<group>"; };
+		2CED4EE9211B25DA00920C4C /* KVideoToolBoxAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVideoToolBoxAsync.swift; sourceTree = "<group>"; };
+		2CF3E740210E2C5C00BE8232 /* UIButton+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ext.swift"; sourceTree = "<group>"; };
+		488D9E3DBDED12F48FD9C428 /* Pods-Knight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Knight/Pods-Knight.debug.xcconfig"; sourceTree = "<group>"; };
+		D366B8D0F86FA365F399C766 /* Pods_Knight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Knight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA68B477CCBB95C3B1EA1450 /* Pods-Knight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Knight.release.xcconfig"; path = "Pods/Target Support Files/Pods-Knight/Pods-Knight.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CB591C520EDF2F700EB3E97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C057090210EFAC100C5A669 /* MobileCoreServices.framework in Frameworks */,
+				2C86A93A20F387A3006EABC8 /* QuartzCore.framework in Frameworks */,
+				2C86A93820F38798006EABC8 /* MediaPlayer.framework in Frameworks */,
+				2C86A93620F3878C006EABC8 /* OpenGLES.framework in Frameworks */,
+				2C86A93420F38785006EABC8 /* UIKit.framework in Frameworks */,
+				2C86A93220F3877E006EABC8 /* AVFoundation.framework in Frameworks */,
+				2C86A93020F38777006EABC8 /* CoreGraphics.framework in Frameworks */,
+				2C86A92E20F3876E006EABC8 /* CoreMedia.framework in Frameworks */,
+				2C86A92C20F3875F006EABC8 /* CoreVideo.framework in Frameworks */,
+				2C86A92A20F38749006EABC8 /* libbz2.tbd in Frameworks */,
+				2C86A92820F3873B006EABC8 /* libz.tbd in Frameworks */,
+				2C86A92620F3872D006EABC8 /* libc++.tbd in Frameworks */,
+				2C86A90320F36ABB006EABC8 /* AudioToolbox.framework in Frameworks */,
+				2C86A90120F36AB5006EABC8 /* VideoToolbox.framework in Frameworks */,
+				2CB5932720EDF59100EB3E97 /* libswscale.a in Frameworks */,
+				2CB5932320EDF59100EB3E97 /* libavfilter.a in Frameworks */,
+				2CB5932620EDF59100EB3E97 /* libswresample.a in Frameworks */,
+				2CB5932220EDF59100EB3E97 /* libavutil.a in Frameworks */,
+				2CB5932420EDF59100EB3E97 /* libavcodec.a in Frameworks */,
+				2CB5932520EDF59100EB3E97 /* libavformat.a in Frameworks */,
+				26B67CFE02723854262508C0 /* Pods_Knight.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB591D920EDF2F800EB3E97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB591E420EDF2F800EB3E97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C428ACC211192AE0081CE85 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2C9E61D52111A7E500BD18D4 /* happy_tree.json */,
+				2C9E61CF2111A53500BD18D4 /* jumping_banano.json */,
+				2C9E61C5211192EA00BD18D4 /* airplane_flying.json */,
+				2C9E61C6211192EA00BD18D4 /* funky_chicken.json */,
+				2C9E61C3211192EA00BD18D4 /* heart.json */,
+				2C9E61C7211192EA00BD18D4 /* hiragana_a.json */,
+				2C9E61C4211192EA00BD18D4 /* rabbit.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2C5DF8AE210B0F8900AAB0F3 /* RootPage */ = {
+			isa = PBXGroup;
+			children = (
+				2CB5932920EDFA6E00EB3E97 /* KRootVC.swift */,
+			);
+			path = RootPage;
+			sourceTree = "<group>";
+		};
+		2C5DF8AF210B0FB300AAB0F3 /* FolderPage */ = {
+			isa = PBXGroup;
+			children = (
+				2CB5932B20EE1F0A00EB3E97 /* KLocalFolderVC.swift */,
+			);
+			path = FolderPage;
+			sourceTree = "<group>";
+		};
+		2C5DF8B0210B0FCC00AAB0F3 /* ResourcePage */ = {
+			isa = PBXGroup;
+			children = (
+				2C5DF8BF210B10C000AAB0F3 /* ViewController */,
+				2C5DF8BE210B10BA00AAB0F3 /* Model */,
+				2C5DF8BD210B10B200AAB0F3 /* View */,
+			);
+			path = ResourcePage;
+			sourceTree = "<group>";
+		};
+		2C5DF8BD210B10B200AAB0F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C5DF8B1210B0FF200AAB0F3 /* KCustomSegmentView.swift */,
+				2C5DF8B5210B109600AAB0F3 /* KResourceCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C5DF8BE210B10BA00AAB0F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C5DF8C0210B11C500AAB0F3 /* KResourceItem.swift */,
+				2C5DF8B9210B10AD00AAB0F3 /* KResourceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C5DF8BF210B10C000AAB0F3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C5DF8B2210B0FF200AAB0F3 /* KResourceVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2C7E90C021081C1A00A08007 /* InputURLPage */ = {
+			isa = PBXGroup;
+			children = (
+				2C7E90C121081C4D00A08007 /* KInputURLVC.swift */,
+			);
+			path = InputURLPage;
+			sourceTree = "<group>";
+		};
+		2C86A71820EF1512006EABC8 /* MoviePlayPage */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A72220EF745A006EABC8 /* FFController */,
+				2C86A71920EF152A006EABC8 /* model */,
+				2C86A71220EF1030006EABC8 /* KMoviePlayVC.swift */,
+				2C86A71320EF1030006EABC8 /* KMoviePlayVC.xib */,
+			);
+			path = MoviePlayPage;
+			sourceTree = "<group>";
+		};
+		2C86A71920EF152A006EABC8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A71A20EF1564006EABC8 /* KHistoryModel.swift */,
+				2C86A8CF20F30788006EABC8 /* KFFOptions.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2C86A71D20EF42AB006EABC8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2C5DF8A3210AFE8A00AAB0F3 /* KNavigationController.swift */,
+				2C5DF8A8210AFF7D00AAB0F3 /* KBaseVC.swift */,
+				2C5DF8A5210AFF7D00AAB0F3 /* KBaseCell.swift */,
+				2C5DF8A6210AFF7D00AAB0F3 /* KTableView.swift */,
+				2C5DF8A7210AFF7D00AAB0F3 /* KWebVC.swift */,
+				2C86A71E20EF42CB006EABC8 /* Const.swift */,
+				2CF3E740210E2C5C00BE8232 /* UIButton+ext.swift */,
+				2C7E90C421081D4300A08007 /* UIView+util.swift */,
+				2C86A72020EF4309006EABC8 /* String+util.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2C86A72220EF745A006EABC8 /* FFController */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A72420EF7533006EABC8 /* KFFMoviePlayerController.swift */,
+				2CBCF0D12101F1340031C36E /* KFFMoviePlayerDef.swift */,
+			);
+			path = FFController;
+			sourceTree = "<group>";
+		};
+		2C86A72620EF7BAE006EABC8 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A72820EF7BAE006EABC8 /* util */,
+				2C86A7E520EF7BAF006EABC8 /* ijksdl */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		2C86A72820EF7BAE006EABC8 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				2CA0AEC520F49C15003E2E6A /* ios */,
+				2C86A72A20EF7BAE006EABC8 /* ijkavformat */,
+				2C86A73F20EF7BAF006EABC8 /* pipeline */,
+				2C86A74A20EF7BAF006EABC8 /* config.h */,
+				2C86A74420EF7BAF006EABC8 /* ff_ffpipenode.h */,
+				2C86A72920EF7BAE006EABC8 /* ff_fferror.h */,
+				2C86A74720EF7BAF006EABC8 /* ff_cmdutils.c */,
+				2C86A74820EF7BAF006EABC8 /* ff_ffpipeline.c */,
+				2C86A74C20EF7BAF006EABC8 /* ff_ffplay.c */,
+				2C86A74E20EF7BAF006EABC8 /* ff_ffpipenode.c */,
+				2C86A74F20EF7BAF006EABC8 /* ff_ffplay_debug.h */,
+				2C86A75120EF7BAF006EABC8 /* ff_ffplay_options.h */,
+				2C86A75220EF7BAF006EABC8 /* ff_ffmsg.h */,
+				2C86A76220EF7BAF006EABC8 /* ff_ffinc.h */,
+				2C86A76320EF7BAF006EABC8 /* ff_ffpipeline.h */,
+				2C86A76420EF7BAF006EABC8 /* ff_ffplay_def.h */,
+				2C86A76520EF7BAF006EABC8 /* ff_cmdutils.h */,
+				2C86A76720EF7BAF006EABC8 /* ff_ffplay.h */,
+				2C86A76920EF7BAF006EABC8 /* ff_ffmsg_queue.h */,
+				2C86A76A20EF7BAF006EABC8 /* ijkavutil */,
+				2C86A74D20EF7BAF006EABC8 /* ijkmeta.h */,
+				2C86A77820EF7BAF006EABC8 /* ijkmeta.c */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		2C86A72A20EF7BAE006EABC8 /* ijkavformat */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A72B20EF7BAE006EABC8 /* ijkavformat.h */,
+				2C86A72C20EF7BAE006EABC8 /* ijkurlhook.c */,
+				2C86A72D20EF7BAF006EABC8 /* ijkioprotocol.h */,
+				2C86A72E20EF7BAF006EABC8 /* ijkasync.c */,
+				2C86A72F20EF7BAF006EABC8 /* ijkioapplication.h */,
+				2C86A73020EF7BAF006EABC8 /* ijkiomanager.c */,
+				2C86A73220EF7BAF006EABC8 /* ijklongurl.c */,
+				2C86A73320EF7BAF006EABC8 /* ijkmediadatasource.c */,
+				2C86A73420EF7BAF006EABC8 /* ijkio.c */,
+				2C86A73520EF7BAF006EABC8 /* ijksegment.c */,
+				2C86A73620EF7BAF006EABC8 /* ijkioapplication.c */,
+				2C86A73720EF7BAF006EABC8 /* ijkioprotocol.c */,
+				2C86A73820EF7BAF006EABC8 /* ijkiourlhook.c */,
+				2C86A73920EF7BAF006EABC8 /* ijkioffio.c */,
+				2C86A73A20EF7BAF006EABC8 /* allformats.c */,
+				2C86A73B20EF7BAF006EABC8 /* ijklivehook.c */,
+				2C86A73C20EF7BAF006EABC8 /* ijkiocache.c */,
+				2C86A73D20EF7BAF006EABC8 /* ijkiourl.h */,
+				2C86A73E20EF7BAF006EABC8 /* ijkiomanager.h */,
+			);
+			path = ijkavformat;
+			sourceTree = "<group>";
+		};
+		2C86A73F20EF7BAF006EABC8 /* pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A74020EF7BAF006EABC8 /* ffpipenode_ffplay_vdec.c */,
+				2C86A74120EF7BAF006EABC8 /* ffpipeline_ffplay.h */,
+				2C86A74220EF7BAF006EABC8 /* ffpipenode_ffplay_vdec.h */,
+				2C86A74320EF7BAF006EABC8 /* ffpipeline_ffplay.c */,
+			);
+			path = pipeline;
+			sourceTree = "<group>";
+		};
+		2C86A76A20EF7BAF006EABC8 /* ijkavutil */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A76B20EF7BAF006EABC8 /* ijkstl.cpp */,
+				2C86A76C20EF7BAF006EABC8 /* ijkutils.h */,
+				2C86A76D20EF7BAF006EABC8 /* ijkfifo.c */,
+				2C86A76E20EF7BAF006EABC8 /* ijkdict.h */,
+				2C86A76F20EF7BAF006EABC8 /* ijktree.c */,
+				2C86A77020EF7BAF006EABC8 /* ijkstl.h */,
+				2C86A77120EF7BAF006EABC8 /* ijkthreadpool.h */,
+				2C86A77220EF7BAF006EABC8 /* opt.h */,
+				2C86A77320EF7BAF006EABC8 /* ijkdict.c */,
+				2C86A77420EF7BAF006EABC8 /* ijkfifo.h */,
+				2C86A77520EF7BAF006EABC8 /* ijkutils.c */,
+				2C86A77620EF7BAF006EABC8 /* ijktree.h */,
+				2C86A77720EF7BAF006EABC8 /* ijkthreadpool.c */,
+			);
+			path = ijkavutil;
+			sourceTree = "<group>";
+		};
+		2C86A7E520EF7BAF006EABC8 /* ijksdl */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A90420F36B87006EABC8 /* ios */,
+				2C86A7E620EF7BAF006EABC8 /* ijksdl_gles2.h */,
+				2C86A7E720EF7BAF006EABC8 /* ijksdl_stdinc.h */,
+				2C86A7E820EF7BAF006EABC8 /* ijksdl_container.h */,
+				2C86A7E920EF7BAF006EABC8 /* ijksdl_vout.h */,
+				2C86A7EA20EF7BAF006EABC8 /* ffmpeg */,
+				2C86A7F120EF7BAF006EABC8 /* ijksdl_thread.c */,
+				2C86A7F220EF7BAF006EABC8 /* ijksdl_audio.c */,
+				2C86A7F320EF7BAF006EABC8 /* gles2 */,
+				2C86A80520EF7BAF006EABC8 /* dummy */,
+				2C86A80A20EF7BAF006EABC8 /* ijksdl_mutex.h */,
+				2C86A80B20EF7BAF006EABC8 /* ijksdl_egl.h */,
+				2C86A80C20EF7BAF006EABC8 /* ijksdl_fourcc.h */,
+				2C86A80D20EF7BAF006EABC8 /* ijksdl_video.h */,
+				2C86A80E20EF7BAF006EABC8 /* ijksdl_aout.c */,
+				2C86A80F20EF7BAF006EABC8 /* ijksdl_endian.h */,
+				2C86A81020EF7BAF006EABC8 /* ijksdl_class.h */,
+				2C86A81120EF7BAF006EABC8 /* ijksdl_extra_log.h */,
+				2C86A81220EF7BAF006EABC8 /* ijksdl_timer.h */,
+				2C86A81320EF7BAF006EABC8 /* ijksdl_aout_internal.h */,
+				2C86A81420EF7BAF006EABC8 /* ijksdl_inc_internal.h */,
+				2C86A81520EF7BAF006EABC8 /* ijksdl_error.c */,
+				2C86A81620EF7BAF006EABC8 /* ijksdl_audio.h */,
+				2C86A81720EF7BAF006EABC8 /* ijksdl_thread.h */,
+				2C86A81820EF7BAF006EABC8 /* ijksdl_vout.c */,
+				2C86A81920EF7BAF006EABC8 /* ijksdl_stdinc.c */,
+				2C86A83C20EF7BAF006EABC8 /* ijksdl_vout_internal.h */,
+				2C86A83D20EF7BAF006EABC8 /* ijksdl_egl.c */,
+				2C86A83E20EF7BAF006EABC8 /* ijksdl_log.h */,
+				2C86A83F20EF7BAF006EABC8 /* ijksdl_mutex.c */,
+				2C86A84020EF7BAF006EABC8 /* ijksdl_aout.h */,
+				2C86A84120EF7BAF006EABC8 /* ijksdl_misc.h */,
+				2C86A84220EF7BAF006EABC8 /* ijksdl.h */,
+				2C86A84320EF7BAF006EABC8 /* ijksdl_error.h */,
+				2C86A84420EF7BAF006EABC8 /* ijksdl_timer.c */,
+				2C86A84520EF7BAF006EABC8 /* ijksdl_extra_log.c */,
+			);
+			path = ijksdl;
+			sourceTree = "<group>";
+		};
+		2C86A7EA20EF7BAF006EABC8 /* ffmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A7EB20EF7BAF006EABC8 /* abi_all */,
+				2C86A7ED20EF7BAF006EABC8 /* ijksdl_vout_overlay_ffmpeg.c */,
+				2C86A7EE20EF7BAF006EABC8 /* ijksdl_image_convert.h */,
+				2C86A7EF20EF7BAF006EABC8 /* ijksdl_inc_ffmpeg.h */,
+				2C86A7F020EF7BAF006EABC8 /* ijksdl_vout_overlay_ffmpeg.h */,
+			);
+			path = ffmpeg;
+			sourceTree = "<group>";
+		};
+		2C86A7EB20EF7BAF006EABC8 /* abi_all */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A7EC20EF7BAF006EABC8 /* image_convert.c */,
+			);
+			path = abi_all;
+			sourceTree = "<group>";
+		};
+		2C86A7F320EF7BAF006EABC8 /* gles2 */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A7F420EF7BAF006EABC8 /* renderer_yuv444p10le.c */,
+				2C86A7F520EF7BAF006EABC8 /* common.c */,
+				2C86A7F620EF7BAF006EABC8 /* renderer_yuv420sp_vtb.m */,
+				2C86A7F720EF7BAF006EABC8 /* internal.h */,
+				2C86A7F820EF7BAF006EABC8 /* vsh */,
+				2C86A7FA20EF7BAF006EABC8 /* renderer_rgb.c */,
+				2C86A7FB20EF7BAF006EABC8 /* renderer_yuv420p.c */,
+				2C86A7FC20EF7BAF006EABC8 /* renderer_yuv420sp.c */,
+				2C86A7FD20EF7BAF006EABC8 /* shader.c */,
+				2C86A7FE20EF7BAF006EABC8 /* renderer.c */,
+				2C86A7FF20EF7BAF006EABC8 /* fsh */,
+				2C86A80420EF7BAF006EABC8 /* color.c */,
+			);
+			path = gles2;
+			sourceTree = "<group>";
+		};
+		2C86A7F820EF7BAF006EABC8 /* vsh */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A7F920EF7BAF006EABC8 /* mvp.vsh.c */,
+			);
+			path = vsh;
+			sourceTree = "<group>";
+		};
+		2C86A7FF20EF7BAF006EABC8 /* fsh */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A80020EF7BAF006EABC8 /* yuv444p10le.fsh.c */,
+				2C86A80120EF7BAF006EABC8 /* yuv420p.fsh.c */,
+				2C86A80220EF7BAF006EABC8 /* yuv420sp.fsh.c */,
+				2C86A80320EF7BAF006EABC8 /* rgb.fsh.c */,
+			);
+			path = fsh;
+			sourceTree = "<group>";
+		};
+		2C86A80520EF7BAF006EABC8 /* dummy */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A80620EF7BAF006EABC8 /* ijksdl_dummy.h */,
+				2C86A80720EF7BAF006EABC8 /* ijksdl_vout_dummy.h */,
+				2C86A80820EF7BAF006EABC8 /* ijksdl_vout_dummy.c */,
+			);
+			path = dummy;
+			sourceTree = "<group>";
+		};
+		2C86A8FF20F36AB4006EABC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CACEC1E21073CB000AD0583 /* CoreServices.framework */,
+				2C86A93B20F387AB006EABC8 /* MobileCoreServices.framework */,
+				2C86A93920F387A3006EABC8 /* QuartzCore.framework */,
+				2C86A93720F38798006EABC8 /* MediaPlayer.framework */,
+				2C86A93520F3878C006EABC8 /* OpenGLES.framework */,
+				2C86A93320F38785006EABC8 /* UIKit.framework */,
+				2C86A93120F3877E006EABC8 /* AVFoundation.framework */,
+				2C86A92F20F38776006EABC8 /* CoreGraphics.framework */,
+				2C86A92D20F3876E006EABC8 /* CoreMedia.framework */,
+				2C86A92B20F3875F006EABC8 /* CoreVideo.framework */,
+				2C86A92920F38749006EABC8 /* libbz2.tbd */,
+				2C86A92720F3873B006EABC8 /* libz.tbd */,
+				2C86A92520F3872D006EABC8 /* libc++.tbd */,
+				2C86A90220F36ABB006EABC8 /* AudioToolbox.framework */,
+				2C86A90020F36AB5006EABC8 /* VideoToolbox.framework */,
+				D366B8D0F86FA365F399C766 /* Pods_Knight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C86A90420F36B87006EABC8 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A91220F36B87006EABC8 /* IJKSDLAudioQueueController.h */,
+				2C86A90720F36B87006EABC8 /* IJKSDLAudioQueueController.m */,
+				2C86A91120F36B87006EABC8 /* IJKSDLAudioUnitController.h */,
+				2C86A90920F36B87006EABC8 /* IJKSDLAudioUnitController.m */,
+				2C86A91020F36B87006EABC8 /* ijksdl_vout_overlay_videotoolbox.h */,
+				2C86A90A20F36B87006EABC8 /* ijksdl_vout_overlay_videotoolbox.m */,
+				2C86A90B20F36B87006EABC8 /* ijksdl_vout_ios_gles2.h */,
+				2C86A91620F36B87006EABC8 /* ijksdl_vout_ios_gles2.m */,
+				2C86A91520F36B87006EABC8 /* IJKSDLAudioKit.h */,
+				2C86A90C20F36B87006EABC8 /* IJKSDLAudioKit.m */,
+				2C86A91720F36B87006EABC8 /* ijksdl_aout_ios_audiounit.h */,
+				2C86A90F20F36B87006EABC8 /* ijksdl_aout_ios_audiounit.m */,
+				2C86A91820F36B87006EABC8 /* ijksdl_thread_ios.h */,
+				2C86A90E20F36B87006EABC8 /* ijksdl_thread_ios.m */,
+				2C86A91920F36B87006EABC8 /* IJKSDLGLView.h */,
+				2C86A90D20F36B87006EABC8 /* IJKSDLGLView.m */,
+				2C86A92420F36CD3006EABC8 /* IJKSDLGLViewProtocol.h */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		2CA0AEC520F49C15003E2E6A /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				2CA0AEC620F49C15003E2E6A /* pipeline */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		2CA0AEC620F49C15003E2E6A /* pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				2CA0AEC720F49C15003E2E6A /* IJKVideoToolBoxSync.h */,
+				2CA0AECD20F49C15003E2E6A /* IJKVideoToolBoxSync.m */,
+				2CA0AECE20F49C15003E2E6A /* IJKVideoToolBoxAsync.h */,
+				2CA0AEC820F49C15003E2E6A /* IJKVideoToolBoxAsync.m */,
+				2CA0AECC20F49C15003E2E6A /* h264_sps_parser.h */,
+			);
+			path = pipeline;
+			sourceTree = "<group>";
+		};
+		2CB591BF20EDF2F700EB3E97 = {
+			isa = PBXGroup;
+			children = (
+				2CB591CA20EDF2F700EB3E97 /* Knight */,
+				2CB591DF20EDF2F800EB3E97 /* KnightTests */,
+				2CB591EA20EDF2F800EB3E97 /* KnightUITests */,
+				2CB591C920EDF2F700EB3E97 /* Products */,
+				2C86A8FF20F36AB4006EABC8 /* Frameworks */,
+				EC066D7E816C897D9165B244 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2CB591C920EDF2F700EB3E97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CB591C820EDF2F700EB3E97 /* Knight.app */,
+				2CB591DC20EDF2F800EB3E97 /* KnightTests.xctest */,
+				2CB591E720EDF2F800EB3E97 /* KnightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CB591CA20EDF2F700EB3E97 /* Knight */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A72620EF7BAE006EABC8 /* media */,
+				2CEACA2920F5DAE300138144 /* MediaPlayer */,
+				2CB5932820EDFA4B00EB3E97 /* Page */,
+				2C86A71D20EF42AB006EABC8 /* Common */,
+				2CB5929020EDF54F00EB3E97 /* Supporting Files */,
+			);
+			path = Knight;
+			sourceTree = "<group>";
+		};
+		2CB591DF20EDF2F800EB3E97 /* KnightTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CB591E020EDF2F800EB3E97 /* KnightTests.swift */,
+				2CB591E220EDF2F800EB3E97 /* Info.plist */,
+			);
+			path = KnightTests;
+			sourceTree = "<group>";
+		};
+		2CB591EA20EDF2F800EB3E97 /* KnightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2CB591EB20EDF2F800EB3E97 /* KnightUITests.swift */,
+				2CB591ED20EDF2F800EB3E97 /* Info.plist */,
+			);
+			path = KnightUITests;
+			sourceTree = "<group>";
+		};
+		2CB5929020EDF54F00EB3E97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C428ACC211192AE0081CE85 /* Resource */,
+				2CB591CB20EDF2F700EB3E97 /* AppDelegate.swift */,
+				2C86A8FE20F364DD006EABC8 /* Knight-Bridging-Header.h */,
+				2CB591D720EDF2F800EB3E97 /* Knight.plist */,
+				2C86A71620EF1168006EABC8 /* Assets.xcassets */,
+				2CB5929120EDF59000EB3E97 /* ffmpeg */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CB5929120EDF59000EB3E97 /* ffmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				2CB5931B20EDF59100EB3E97 /* lib */,
+			);
+			path = ffmpeg;
+			sourceTree = SOURCE_ROOT;
+		};
+		2CB5931B20EDF59100EB3E97 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2CB5931C20EDF59100EB3E97 /* libavutil.a */,
+				2CB5931D20EDF59100EB3E97 /* libavfilter.a */,
+				2CB5931E20EDF59100EB3E97 /* libavcodec.a */,
+				2CB5931F20EDF59100EB3E97 /* libavformat.a */,
+				2CB5932020EDF59100EB3E97 /* libswresample.a */,
+				2CB5932120EDF59100EB3E97 /* libswscale.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		2CB5932820EDFA4B00EB3E97 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				2C5DF8B0210B0FCC00AAB0F3 /* ResourcePage */,
+				2C5DF8AF210B0FB300AAB0F3 /* FolderPage */,
+				2C5DF8AE210B0F8900AAB0F3 /* RootPage */,
+				2C7E90C021081C1A00A08007 /* InputURLPage */,
+				2C86A71820EF1512006EABC8 /* MoviePlayPage */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		2CEACA2920F5DAE300138144 /* MediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2CEACA2A20F5DB9700138144 /* KAudioKit.swift */,
+				2CEACA2D20F6078B00138144 /* KMediaModule.swift */,
+				2CEACA2F20F6F21700138144 /* KNotificaitonManager.swift */,
+				2CEACA3120F6F90F00138144 /* KMediaPlayback.swift */,
+				2CEACA3420F757B100138144 /* KMediaControl.swift */,
+				2C47F3442112EBCD003AD2CF /* KPlayer.swift */,
+				2C019DA52115AE3600C09678 /* KMediaPlayer.swift */,
+				2C7EFD48211694BB00A28F44 /* KPipeline.swift */,
+				2CE09ADC211B1EB40051EEED /* KVideoToolbox.swift */,
+				2CED4EE9211B25DA00920C4C /* KVideoToolBoxAsync.swift */,
+			);
+			path = MediaPlayer;
+			sourceTree = "<group>";
+		};
+		EC066D7E816C897D9165B244 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				488D9E3DBDED12F48FD9C428 /* Pods-Knight.debug.xcconfig */,
+				FA68B477CCBB95C3B1EA1450 /* Pods-Knight.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CB591C720EDF2F700EB3E97 /* Knight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CB591F020EDF2F800EB3E97 /* Build configuration list for PBXNativeTarget "Knight" */;
+			buildPhases = (
+				8B0EE5EF9E300793090EC45B /* [CP] Check Pods Manifest.lock */,
+				2CB591C420EDF2F700EB3E97 /* Sources */,
+				2CB591C520EDF2F700EB3E97 /* Frameworks */,
+				2CB591C620EDF2F700EB3E97 /* Resources */,
+				70BF382F393ABCC7043F18C5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Knight;
+			productName = Knight;
+			productReference = 2CB591C820EDF2F700EB3E97 /* Knight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CB591DB20EDF2F800EB3E97 /* KnightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CB591F320EDF2F800EB3E97 /* Build configuration list for PBXNativeTarget "KnightTests" */;
+			buildPhases = (
+				2CB591D820EDF2F800EB3E97 /* Sources */,
+				2CB591D920EDF2F800EB3E97 /* Frameworks */,
+				2CB591DA20EDF2F800EB3E97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CB591DE20EDF2F800EB3E97 /* PBXTargetDependency */,
+			);
+			name = KnightTests;
+			productName = KnightTests;
+			productReference = 2CB591DC20EDF2F800EB3E97 /* KnightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2CB591E620EDF2F800EB3E97 /* KnightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CB591F620EDF2F800EB3E97 /* Build configuration list for PBXNativeTarget "KnightUITests" */;
+			buildPhases = (
+				2CB591E320EDF2F800EB3E97 /* Sources */,
+				2CB591E420EDF2F800EB3E97 /* Frameworks */,
+				2CB591E520EDF2F800EB3E97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CB591E920EDF2F800EB3E97 /* PBXTargetDependency */,
+			);
+			name = KnightUITests;
+			productName = KnightUITests;
+			productReference = 2CB591E720EDF2F800EB3E97 /* KnightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CB591C020EDF2F700EB3E97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = ChenZhiPeng;
+				TargetAttributes = {
+					2CB591C720EDF2F700EB3E97 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					2CB591DB20EDF2F800EB3E97 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
+						TestTargetID = 2CB591C720EDF2F700EB3E97;
+					};
+					2CB591E620EDF2F800EB3E97 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
+						TestTargetID = 2CB591C720EDF2F700EB3E97;
+					};
+				};
+			};
+			buildConfigurationList = 2CB591C320EDF2F700EB3E97 /* Build configuration list for PBXProject "Knight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CB591BF20EDF2F700EB3E97;
+			productRefGroup = 2CB591C920EDF2F700EB3E97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CB591C720EDF2F700EB3E97 /* Knight */,
+				2CB591DB20EDF2F800EB3E97 /* KnightTests */,
+				2CB591E620EDF2F800EB3E97 /* KnightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CB591C620EDF2F700EB3E97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9E61CD211192EA00BD18D4 /* hiragana_a.json in Resources */,
+				2C86A71720EF1168006EABC8 /* Assets.xcassets in Resources */,
+				2C9E61D62111A7E500BD18D4 /* happy_tree.json in Resources */,
+				2C9E61CB211192EA00BD18D4 /* airplane_flying.json in Resources */,
+				2C9E61D12111A53500BD18D4 /* jumping_banano.json in Resources */,
+				2C86A71520EF1030006EABC8 /* KMoviePlayVC.xib in Resources */,
+				2C9E61C9211192EA00BD18D4 /* heart.json in Resources */,
+				2C9E61CA211192EA00BD18D4 /* rabbit.json in Resources */,
+				2C9E61CC211192EA00BD18D4 /* funky_chicken.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB591DA20EDF2F800EB3E97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB591E520EDF2F800EB3E97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70BF382F393ABCC7043F18C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Knight/Pods-Knight-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Knight/Pods-Knight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B0EE5EF9E300793090EC45B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Knight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CB591C420EDF2F700EB3E97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C86A8BA20EF7BAF006EABC8 /* ijksdl_vout.c in Sources */,
+				2C47F3452112EBCD003AD2CF /* KPlayer.swift in Sources */,
+				2C5DF8B3210B0FF200AAB0F3 /* KCustomSegmentView.swift in Sources */,
+				2CEACA2B20F5DB9700138144 /* KAudioKit.swift in Sources */,
+				2CE09ADD211B1EB40051EEED /* KVideoToolbox.swift in Sources */,
+				2C86A85320EF7BAF006EABC8 /* allformats.c in Sources */,
+				2CEACA2E20F6078B00138144 /* KMediaModule.swift in Sources */,
+				2C86A8B320EF7BAF006EABC8 /* yuv420sp.fsh.c in Sources */,
+				2C86A8CB20EF7BAF006EABC8 /* ijksdl_egl.c in Sources */,
+				2CB591CC20EDF2F700EB3E97 /* AppDelegate.swift in Sources */,
+				2C86A72520EF7533006EABC8 /* KFFMoviePlayerController.swift in Sources */,
+				2C86A86620EF7BAF006EABC8 /* ijkfifo.c in Sources */,
+				2C5DF8BC210B10AD00AAB0F3 /* KResourceModel.swift in Sources */,
+				2C019DA62115AE3600C09678 /* KMediaPlayer.swift in Sources */,
+				2C86A85620EF7BAF006EABC8 /* ffpipenode_ffplay_vdec.c in Sources */,
+				2C7E90C221081C4D00A08007 /* KInputURLVC.swift in Sources */,
+				2C86A8A720EF7BAF006EABC8 /* ijksdl_audio.c in Sources */,
+				2CF3E741210E2C5C00BE8232 /* UIButton+ext.swift in Sources */,
+				2C86A86820EF7BAF006EABC8 /* ijkdict.c in Sources */,
+				2C86A72120EF4309006EABC8 /* String+util.swift in Sources */,
+				2C86A85B20EF7BAF006EABC8 /* ff_ffplay.c in Sources */,
+				2C86A8AC20EF7BAF006EABC8 /* renderer_rgb.c in Sources */,
+				2CEACA3520F757B100138144 /* KMediaControl.swift in Sources */,
+				2C86A8D020F30788006EABC8 /* KFFOptions.swift in Sources */,
+				2C5DF8AC210AFF7D00AAB0F3 /* KBaseVC.swift in Sources */,
+				2C86A8A620EF7BAF006EABC8 /* ijksdl_thread.c in Sources */,
+				2C86A85A20EF7BAF006EABC8 /* ff_ffpipeline.c in Sources */,
+				2C5DF8A9210AFF7D00AAB0F3 /* KBaseCell.swift in Sources */,
+				2C86A86920EF7BAF006EABC8 /* ijkutils.c in Sources */,
+				2C86A92120F36B87006EABC8 /* ijksdl_thread_ios.m in Sources */,
+				2C86A8BB20EF7BAF006EABC8 /* ijksdl_stdinc.c in Sources */,
+				2C5DF8C1210B11C500AAB0F3 /* KResourceItem.swift in Sources */,
+				2CA0AED620F49C15003E2E6A /* IJKVideoToolBoxSync.m in Sources */,
+				2C86A91E20F36B87006EABC8 /* ijksdl_vout_overlay_videotoolbox.m in Sources */,
+				2C86A8B620EF7BAF006EABC8 /* ijksdl_vout_dummy.c in Sources */,
+				2C86A8B920EF7BAF006EABC8 /* ijksdl_error.c in Sources */,
+				2C86A86520EF7BAF006EABC8 /* ijkstl.cpp in Sources */,
+				2C86A8AE20EF7BAF006EABC8 /* renderer_yuv420sp.c in Sources */,
+				2C86A8B120EF7BAF006EABC8 /* yuv444p10le.fsh.c in Sources */,
+				2C86A8B220EF7BAF006EABC8 /* yuv420p.fsh.c in Sources */,
+				2CA0AED420F49C15003E2E6A /* IJKVideoToolBoxAsync.m in Sources */,
+				2C86A84920EF7BAF006EABC8 /* ijkiomanager.c in Sources */,
+				2C86A85520EF7BAF006EABC8 /* ijkiocache.c in Sources */,
+				2C86A91C20F36B87006EABC8 /* IJKSDLAudioQueueController.m in Sources */,
+				2C86A8B420EF7BAF006EABC8 /* rgb.fsh.c in Sources */,
+				2C86A84720EF7BAF006EABC8 /* ijkurlhook.c in Sources */,
+				2CB5932C20EE1F0A00EB3E97 /* KLocalFolderVC.swift in Sources */,
+				2C86A92020F36B87006EABC8 /* IJKSDLGLView.m in Sources */,
+				2C86A92220F36B87006EABC8 /* ijksdl_aout_ios_audiounit.m in Sources */,
+				2C86A8CC20EF7BAF006EABC8 /* ijksdl_mutex.c in Sources */,
+				2CED4EEA211B25DA00920C4C /* KVideoToolBoxAsync.swift in Sources */,
+				2C86A86A20EF7BAF006EABC8 /* ijkthreadpool.c in Sources */,
+				2C86A84F20EF7BAF006EABC8 /* ijkioapplication.c in Sources */,
+				2C86A85920EF7BAF006EABC8 /* ff_cmdutils.c in Sources */,
+				2C86A8A820EF7BAF006EABC8 /* renderer_yuv444p10le.c in Sources */,
+				2C5DF8B6210B109600AAB0F3 /* KResourceCell.swift in Sources */,
+				2C86A84D20EF7BAF006EABC8 /* ijkio.c in Sources */,
+				2CEACA3220F6F90F00138144 /* KMediaPlayback.swift in Sources */,
+				2C86A85C20EF7BAF006EABC8 /* ff_ffpipenode.c in Sources */,
+				2C86A91D20F36B87006EABC8 /* IJKSDLAudioUnitController.m in Sources */,
+				2C86A85420EF7BAF006EABC8 /* ijklivehook.c in Sources */,
+				2CBCF0D22101F1340031C36E /* KFFMoviePlayerDef.swift in Sources */,
+				2C86A8B020EF7BAF006EABC8 /* renderer.c in Sources */,
+				2C86A84820EF7BAF006EABC8 /* ijkasync.c in Sources */,
+				2C86A8AD20EF7BAF006EABC8 /* renderer_yuv420p.c in Sources */,
+				2C86A84B20EF7BAF006EABC8 /* ijklongurl.c in Sources */,
+				2C7E90C521081D4300A08007 /* UIView+util.swift in Sources */,
+				2C86A8A420EF7BAF006EABC8 /* image_convert.c in Sources */,
+				2C86A8A520EF7BAF006EABC8 /* ijksdl_vout_overlay_ffmpeg.c in Sources */,
+				2C86A8B820EF7BAF006EABC8 /* ijksdl_aout.c in Sources */,
+				2C86A85020EF7BAF006EABC8 /* ijkioprotocol.c in Sources */,
+				2C86A85720EF7BAF006EABC8 /* ffpipeline_ffplay.c in Sources */,
+				2CB5932A20EDFA6E00EB3E97 /* KRootVC.swift in Sources */,
+				2C86A86B20EF7BAF006EABC8 /* ijkmeta.c in Sources */,
+				2C86A84C20EF7BAF006EABC8 /* ijkmediadatasource.c in Sources */,
+				2C5DF8A4210AFE8A00AAB0F3 /* KNavigationController.swift in Sources */,
+				2C86A8B520EF7BAF006EABC8 /* color.c in Sources */,
+				2C86A8AF20EF7BAF006EABC8 /* shader.c in Sources */,
+				2C86A8AA20EF7BAF006EABC8 /* renderer_yuv420sp_vtb.m in Sources */,
+				2C86A91F20F36B87006EABC8 /* IJKSDLAudioKit.m in Sources */,
+				2C86A71B20EF1564006EABC8 /* KHistoryModel.swift in Sources */,
+				2CEACA3020F6F21700138144 /* KNotificaitonManager.swift in Sources */,
+				2C5DF8AA210AFF7D00AAB0F3 /* KTableView.swift in Sources */,
+				2C86A71420EF1030006EABC8 /* KMoviePlayVC.swift in Sources */,
+				2C86A86720EF7BAF006EABC8 /* ijktree.c in Sources */,
+				2C86A84E20EF7BAF006EABC8 /* ijksegment.c in Sources */,
+				2C86A8A920EF7BAF006EABC8 /* common.c in Sources */,
+				2C86A92320F36B87006EABC8 /* ijksdl_vout_ios_gles2.m in Sources */,
+				2C5DF8B4210B0FF200AAB0F3 /* KResourceVC.swift in Sources */,
+				2C5DF8AB210AFF7D00AAB0F3 /* KWebVC.swift in Sources */,
+				2C86A8CE20EF7BAF006EABC8 /* ijksdl_extra_log.c in Sources */,
+				2C86A8CD20EF7BAF006EABC8 /* ijksdl_timer.c in Sources */,
+				2C86A71F20EF42CB006EABC8 /* Const.swift in Sources */,
+				2C7EFD49211694BB00A28F44 /* KPipeline.swift in Sources */,
+				2C86A8AB20EF7BAF006EABC8 /* mvp.vsh.c in Sources */,
+				2C86A85220EF7BAF006EABC8 /* ijkioffio.c in Sources */,
+				2C86A85120EF7BAF006EABC8 /* ijkiourlhook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB591D820EDF2F800EB3E97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB591E120EDF2F800EB3E97 /* KnightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CB591E320EDF2F800EB3E97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB591EC20EDF2F800EB3E97 /* KnightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CB591DE20EDF2F800EB3E97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CB591C720EDF2F700EB3E97 /* Knight */;
+			targetProxy = 2CB591DD20EDF2F800EB3E97 /* PBXContainerItemProxy */;
+		};
+		2CB591E920EDF2F800EB3E97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CB591C720EDF2F700EB3E97 /* Knight */;
+			targetProxy = 2CB591E820EDF2F800EB3E97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2CB591EE20EDF2F800EB3E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2CB591EF20EDF2F800EB3E97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CB591F120EDF2F800EB3E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 488D9E3DBDED12F48FD9C428 /* Pods-Knight.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DEU5T2TPVK;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/media",
+					"$(PROJECT_DIR)/ffmpeg/include",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Knight/Supporting Files/Knight.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ffmpeg/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evangelchen.Knight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Knight/Supporting Files/Knight-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7s";
+			};
+			name = Debug;
+		};
+		2CB591F220EDF2F800EB3E97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA68B477CCBB95C3B1EA1450 /* Pods-Knight.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DEU5T2TPVK;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/media",
+					"$(PROJECT_DIR)/ffmpeg/include",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Knight/Supporting Files/Knight.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ffmpeg/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evangelchen.Knight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Knight/Supporting Files/Knight-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7s";
+			};
+			name = Release;
+		};
+		2CB591F420EDF2F800EB3E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48E3LB8PD7;
+				INFOPLIST_FILE = KnightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evanglechen.KnightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knight.app/Knight";
+			};
+			name = Debug;
+		};
+		2CB591F520EDF2F800EB3E97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48E3LB8PD7;
+				INFOPLIST_FILE = KnightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evanglechen.KnightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Knight.app/Knight";
+			};
+			name = Release;
+		};
+		2CB591F720EDF2F800EB3E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48E3LB8PD7;
+				INFOPLIST_FILE = KnightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evanglechen.KnightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Knight;
+			};
+			name = Debug;
+		};
+		2CB591F820EDF2F800EB3E97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48E3LB8PD7;
+				INFOPLIST_FILE = KnightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evanglechen.KnightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Knight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CB591C320EDF2F700EB3E97 /* Build configuration list for PBXProject "Knight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CB591EE20EDF2F800EB3E97 /* Debug */,
+				2CB591EF20EDF2F800EB3E97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CB591F020EDF2F800EB3E97 /* Build configuration list for PBXNativeTarget "Knight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CB591F120EDF2F800EB3E97 /* Debug */,
+				2CB591F220EDF2F800EB3E97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CB591F320EDF2F800EB3E97 /* Build configuration list for PBXNativeTarget "KnightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CB591F420EDF2F800EB3E97 /* Debug */,
+				2CB591F520EDF2F800EB3E97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CB591F620EDF2F800EB3E97 /* Build configuration list for PBXNativeTarget "KnightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CB591F720EDF2F800EB3E97 /* Debug */,
+				2CB591F820EDF2F800EB3E97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CB591C020EDF2F700EB3E97 /* Project object */;
+}
