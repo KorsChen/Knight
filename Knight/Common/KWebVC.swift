@@ -3,7 +3,7 @@
 //  leihou
 //
 //  Created by 陈志鹏 on 6/11/18.
-//  Copyright © 2018 huajiao. All rights reserved.
+//  Copyright © 2018 KorsChen. All rights reserved.
 //
 
 import UIKit

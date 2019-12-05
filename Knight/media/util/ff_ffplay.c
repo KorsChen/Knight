@@ -71,7 +71,6 @@
 #include "ff_ffpipenode.h"
 #include "ff_ffplay_debug.h"
 #include "ijkmeta.h"
-#include "ijkversion.h"
 #include <stdatomic.h>
 #if defined(__ANDROID__)
 #include "ijksoundtouch/ijksoundtouch_wrap.h"

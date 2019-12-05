@@ -3,7 +3,7 @@
 //  leihou
 //
 //  Created by 陈志鹏 on 2018/5/29.
-//  Copyright © 2018 huajiao. All rights reserved.
+//  Copyright © 2018 KorsChen. All rights reserved.
 //
 
 import UIKit
@@ -13,7 +13,7 @@ class KNavigationBar: UINavigationBar, UIBarPositioningDelegate
     override func layoutSubviews() {
         super.layoutSubviews()
         for view in subviews {
-            view.layoutMargins = .zero
+//            view.layoutMargins = .zero
             if [
                 "_UINavigationBarBackground",
                 "_UIBarBackground",

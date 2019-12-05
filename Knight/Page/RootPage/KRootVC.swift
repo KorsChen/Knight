@@ -31,7 +31,7 @@ class KRootVC: KBaseVC
         return array
     }()
     
-    lazy var animationViewArray = [LOTAnimationView]()
+    lazy var animationViewArray = [AnimationView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,9 +98,9 @@ class KRootVC: KBaseVC
     }
     
     func setupAnimation(name: String, superView: UIView, frame: CGRect) {
-        let view = LOTAnimationView(name: name)
+        let view = AnimationView(name: name)
         view.frame = frame
-        view.loopAnimation = true
+        view.stop()
         animationViewArray.append(view)
         superView.addSubview(view)
     }
